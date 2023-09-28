@@ -1,0 +1,24 @@
+a {
+    color: black;
+}
+    .circle {
+        border-radius: 50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .circle {
+        font-size: 3em;
+        color: rgb(56, 150, 128);
+        border: 2px solid rgb(56, 150, 128);
+    }
+
+    #wrapper {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 30px;
+        max-width: 1170px;
+    }
