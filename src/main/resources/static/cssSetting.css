@@ -1,24 +1,66 @@
 a {
     color: black;
 }
-    .circle {
-        border-radius: 50%;
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+div.circle {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    color: rgb(0 0 0);
+    border: 2px solid rgb(0 0 0);
+}
 
-    .circle {
-        font-size: 3em;
-        color: rgb(56, 150, 128);
-        border: 2px solid rgb(56, 150, 128);
-    }
+#wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 1170px;
+}
 
-    #wrapper {
-        display: flex;
-        justify-content: center;
-        margin: 0 auto;
-        padding: 30px;
-        max-width: 1170px;
-    }
+button {
+    background: #1AAB8A;
+    color: #fff;
+    border: none;
+    position: relative;
+    height: 60px;
+    font-size: 1.6em;
+    padding: 0 2em;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+}
+
+button:hover {
+    background: #fff;
+    color: #1AAB8A;
+}
+
+button:before,
+button:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background: #1AAB8A;
+    transition: 400ms ease all;
+}
+
+button:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+button:hover:before,
+button:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+}
